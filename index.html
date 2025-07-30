@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eBASE Africa PSEA Reporting Platform</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0fff0; margin: 0; color: #222; }
+    header, footer { background: #228B22; color: white; padding: 1rem; text-align: center; }
+    nav { display: flex; flex-wrap: wrap; background: #2e8b57; justify-content: center; }
+    nav a { color: white; padding: 1rem; text-decoration: none; }
+    nav a:hover { background: #1e5f3d; }
+    main { padding: 2rem; }
+    section { display: none; margin-bottom: 2rem; }
+    section.active { display: block; }
+    h2 { color: #228B22; }
+    .toggle-btn { position: absolute; top: 1rem; right: 1rem; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>eBASE Africa PSEA Reporting Platform</h1>
+</header>
+<nav>
+  <a href="#" onclick="showSection('welcome')">Welcome</a>
+  <a href="#" onclick="showSection('definitions')">What Is Sexual Exploitation, Abuse, and Harassment?</a>
+  <a href="#" onclick="showSection('form')">PSEA Incident Reporting Form</a>
+  <a href="#" onclick="showSection('after')">What Happens After You Report?</a>
+  <a href="#" onclick="showSection('faq')">FAQs</a>
+  <a href="#" onclick="showSection('accused')">What If You're Accused?</a>
+  <a href="#" onclick="showSection('support')">Survivor Support</a>
+  <a href="#" onclick="showSection('reporting')">Other Ways to Report</a>
+  <a href="#" onclick="showSection('resources')">Resources & Downloads</a>
+</nav>
+<main>
+  <section id="welcome" class="active">
+    <h2>Welcome</h2>
+    <p>"We believe in dignity, safety, and respect for all. If you or someone you know has experienced or witnessed any form of sexual exploitation, abuse, or misconduct related to eBASE’s work, we are here to listen and act."</p>
+  </section>
+
+  <section id="definitions">
+    <h2>What Is Sexual Exploitation, Abuse, and Harassment?</h2>
+    <p><strong>Sexual Exploitation:</strong> Taking advantage of an individual's vulnerability or power dynamics to engage in sexual activities for personal or third-party gain, without regard for the individual's rights, well-being, or consent.</p>
+    <p><strong>Sexual Abuse:</strong> Any non-consensual sexual activity or behavior, including attempted or threatened acts. Consent cannot be given when there is an imbalance of power.</p>
+    <p><strong>Sexual Harassment:</strong> Unwelcome or unwanted behavior of a sexual nature, including advances, comments, gestures, or actions that create a hostile, intimidating, or offensive environment.</p>
+    <p><em>None of These Behaviors Are Ever Acceptable</em></p>
+  </section>
+
+  <section id="form">
+    <h2>PSEA Incident Reporting Form</h2>
+    <form action="https://formspree.io/f/mdkdzjll" method="POST">
+      <p>Your information is confidential. You may choose to report anonymously.</p>
+      <label>1. Type of Incident</label>
+      <input type="checkbox" name="incident" value="Sexual Harassment" /> Sexual Harassment<br />
+      <input type="checkbox" name="incident" value="Sexual Exploitation" /> Sexual Exploitation<br />
+      <input type="checkbox" name="incident" value="Sexual Abuse" /> Sexual Abuse<br />
+      <input type="checkbox" name="incident" value="Other" /> Other: <input type="text" name="other" /><br /><br />
+
+      <label>2. Date of Incident</label>
+      <input type="text" name="date" /><br />
+
+      <label>3. Location of Incident</label>
+      <input type="text" name="location" /><br />
+
+      <label>4. Description of What Happened</label>
+      <textarea name="description"></textarea><br />
+
+      <label>5. Who was involved? (Optional)</label>
+      <input type="text" name="people_involved" /><br />
+
+      <label>6. Would you like to be contacted?</label>
+      <input type="radio" name="followup" value="Yes" /> Yes
+      <input type="radio" name="followup" value="No" /> No<br />
+
+      <label>7. If yes, how?</label>
+      Phone: <input type="text" name="phone" /><br />
+      Email: <input type="email" name="email" /><br />
+      Other: <input type="text" name="other_contact" /><br />
+
+      <label>8. Preferred Language</label>
+      <select name="language">
+        <option>English</option>
+        <option>French</option>
+        <option>Pidgin</option>
+        <option>Other</option>
+      </select><br />
+
+      <label><input type="checkbox" required /> I understand this report will be handled confidentially and in line with the PSEA policy.</label><br /><br />
+
+      <button type="submit">Submit Report</button>
+    </form>
+    <p><strong>Thank you for submitting your report. Your information has been received confidentially and will be reviewed by our safeguarding team.</strong></p>
+  </section>
+
+  <section id="after">
+    <h2>What Happens After You Report?</h2>
+    <ul>
+      <li>Report Received</li>
+      <li>Initial Review</li>
+      <li>Investigation</li>
+      <li>Support Services Offered</li>
+      <li>Outcome</li>
+      <li>Feedback Loop</li>
+    </ul>
+    <p>Reporting does not require proof, just reasonable concern.</p>
+  </section>
+
+  <section id="faq">
+    <h2>FAQs</h2>
+    <ul>
+      <li><strong>Can I report anonymously?</strong> – Yes.</li>
+      <li><strong>Will the accused know I reported them?</strong> – No.</li>
+      <li><strong>What if the accused is a senior staff or donor?</strong> – Everyone is subject to the same policy.</li>
+      <li><strong>Will I face retaliation?</strong> – No. Retaliation is prohibited.</li>
+      <li><strong>I witnessed something. Should I still report?</strong> – Yes.</li>
+    </ul>
+  </section>
+
+  <section id="accused">
+    <h2>What If You're Accused?</h2>
+    <ul>
+      <li>You will be informed and allowed to respond</li>
+      <li>An internal or external review will be launched</li>
+      <li>Sanctions may include suspension, termination, or legal referral</li>
+      <li>False accusations made maliciously may result in disciplinary action</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>Survivor Support</h2>
+    <ul>
+      <li>Immediate safety planning</li>
+      <li>Referrals to health, psychosocial, and legal services</li>
+      <li>Emotional support and counselling</li>
+      <li>Survivor-led approach: your needs and choices come first</li>
+    </ul>
+  </section>
+
+  <section id="reporting">
+    <h2>Other Ways to Report</h2>
+    <ul>
+      <li>Email: janefrancis@ebaseafrica.org</li>
+      <li>Safeguarding Hotline: Coming Soon</li>
+      <li>Suggestion Box (in the Office)</li>
+    </ul>
+  </section>
+
+  <section id="resources">
+    <h2>Resources & Downloads</h2>
+    <ul>
+      <li><a href="#">Download the PSEA Policy PDF</a></li>
+      <li><a href="#">Code of Conduct</a></li>
+      <li><a href="#">Info leaflet: “What happens after I report?”</a></li>
+    </ul>
+  </section>
+</main>
+<footer>&copy; 2025 eBASE Africa</footer>
+<script>
+  function showSection(id) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+</body>
+</html>
